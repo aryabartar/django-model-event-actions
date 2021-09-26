@@ -1,0 +1,2 @@
+class DeleteTestException(Exception):
+    pass
