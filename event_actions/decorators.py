@@ -1,6 +1,5 @@
-from model_events import constants
-from model_events.constants import RELATED_CHANGES
-from model_events.exceptions import IllegalArgumentError
+from . import constants
+from .exceptions import IllegalArgumentError
 
 
 class InnerEventDecorator:
@@ -16,7 +15,7 @@ class InnerEventDecorator:
 
         self.event_type = event_type
         self.func = func
-        self.is_related_event = event_type in RELATED_CHANGES
+        self.is_related_event = event_type in constants.RELATED_CHANGES
 
     def __set_name__(self, owner, name):
         event = self.event_type

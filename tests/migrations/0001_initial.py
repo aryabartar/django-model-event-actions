@@ -2,7 +2,7 @@
 
 from django.db import migrations, models
 import django.db.models.deletion
-import model_events.mixins
+import event_actions.mixins
 
 
 class Migration(migrations.Migration):
@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
             options={
                 'abstract': False,
             },
-            bases=(model_events.mixins.EventActionModelMixin, model_events.mixins.ModelDiffMixin, models.Model),
+            bases=(event_actions.mixins.EventActionModelMixin, event_actions.mixins.ModelDiffMixin, models.Model),
         ),
         migrations.CreateModel(
             name='TFKModel2',
@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
             options={
                 'abstract': False,
             },
-            bases=(model_events.mixins.EventActionModelMixin, model_events.mixins.ModelDiffMixin, models.Model),
+            bases=(event_actions.mixins.EventActionModelMixin, event_actions.mixins.ModelDiffMixin, models.Model),
         ),
         migrations.CreateModel(
             name='TM2MModel',
@@ -44,7 +44,7 @@ class Migration(migrations.Migration):
             options={
                 'abstract': False,
             },
-            bases=(model_events.mixins.EventActionModelMixin, model_events.mixins.ModelDiffMixin, models.Model),
+            bases=(event_actions.mixins.EventActionModelMixin, event_actions.mixins.ModelDiffMixin, models.Model),
         ),
         migrations.CreateModel(
             name='TModel',
@@ -66,6 +66,6 @@ class Migration(migrations.Migration):
             options={
                 'abstract': False,
             },
-            bases=(model_events.mixins.EventActionModelMixin, model_events.mixins.ModelDiffMixin, models.Model),
+            bases=(event_actions.mixins.EventActionModelMixin, event_actions.mixins.ModelDiffMixin, models.Model),
         ),
     ]

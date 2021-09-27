@@ -1,8 +1,8 @@
 from unittest import mock
 
-from model_events import constants
-from model_events.decorators import PreSaveEvent, InnerEventDecoratorFactory
-from model_events.exceptions import IllegalArgumentError
+from event_actions import constants
+from event_actions.decorators import PreSaveEvent, InnerEventDecoratorFactory
+from event_actions.exceptions import IllegalArgumentError
 from tests.exception import DeleteTestException
 from tests.models import TModel, TFKModel, TFKModel2
 from tests.tests.base import TestBase

@@ -1,3 +1,5 @@
 from setuptools import setup
 
-setup()
+setup(
+    packages=["event_actions"]
+)

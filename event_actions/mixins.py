@@ -1,8 +1,8 @@
 from django.db.models import ManyToOneRel
 from django.forms import model_to_dict
 
-from model_events import constants
-from model_events.constants import FK_CHANGE
+from . import constants
+from event_actions.constants import FK_CHANGE
 
 
 class ModelDiffMixin(object):

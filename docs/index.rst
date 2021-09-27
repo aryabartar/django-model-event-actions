@@ -6,8 +6,8 @@ Signals for a cleaner design and extra functionalities.
 
 .. _Django: https://www.djangoproject.com/
 
-:Package: https://www.arya.com/
-:Source: https://www.arya.com/
+:Package: https://pypi.org/project/django-model-event-actions/
+:Source: https://github.com/aryabartar/django-model-event-actions
 
 Overview
 ========
@@ -22,6 +22,7 @@ To get a feel of how django-model-event-actions works, check out the
 Contents
 ========
 
-* :ref:`tutorial`
+* :doc:`install`
+* :doc:`tutorial`
 * :ref:`modindex`
 * :ref:`search`

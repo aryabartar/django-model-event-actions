@@ -2,24 +2,24 @@ import inspect
 
 from django.db import models
 
-from model_events.decorators import PreSaveEvent, PreCreateEvent, PostCreateEvent, PostSaveEvent, PreDeleteEvent, \
+from event_actions.decorators import PreSaveEvent, PreCreateEvent, PostCreateEvent, PostSaveEvent, PreDeleteEvent, \
     PostDeleteEvent, FKChangeEvent
-from model_events.models import EventActionModel
+from event_actions.models import EventActionModel
 
 
 def mockable_function(_):
     return _
 
 
-class TFKModel(EventDrivenModel):
+class TFKModel(EventActionModel):
     char_field = models.CharField(max_length=1024)
 
 
-class TFKModel2(EventDrivenModel):
+class TFKModel2(EventActionModel):
     char_field = models.CharField(max_length=1024)
 
 
-class TM2MModel(EventDrivenModel):
+class TM2MModel(EventActionModel):
     char_field = models.CharField(max_length=1024)
 
 
