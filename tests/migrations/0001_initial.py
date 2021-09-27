@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
             options={
                 'abstract': False,
             },
-            bases=(event_actions.mixins.EventActionModelMixin, event_actions.mixins.ModelDiffMixin, models.Model),
+            bases=(event_actions.mixins.EventActionMixin, event_actions.mixins.ModelDiffMixin, models.Model),
         ),
         migrations.CreateModel(
             name='TFKModel2',
@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
             options={
                 'abstract': False,
             },
-            bases=(event_actions.mixins.EventActionModelMixin, event_actions.mixins.ModelDiffMixin, models.Model),
+            bases=(event_actions.mixins.EventActionMixin, event_actions.mixins.ModelDiffMixin, models.Model),
         ),
         migrations.CreateModel(
             name='TM2MModel',
@@ -44,7 +44,7 @@ class Migration(migrations.Migration):
             options={
                 'abstract': False,
             },
-            bases=(event_actions.mixins.EventActionModelMixin, event_actions.mixins.ModelDiffMixin, models.Model),
+            bases=(event_actions.mixins.EventActionMixin, event_actions.mixins.ModelDiffMixin, models.Model),
         ),
         migrations.CreateModel(
             name='TModel',
@@ -66,6 +66,6 @@ class Migration(migrations.Migration):
             options={
                 'abstract': False,
             },
-            bases=(event_actions.mixins.EventActionModelMixin, event_actions.mixins.ModelDiffMixin, models.Model),
+            bases=(event_actions.mixins.EventActionMixin, event_actions.mixins.ModelDiffMixin, models.Model),
         ),
     ]

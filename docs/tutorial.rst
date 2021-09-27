@@ -211,6 +211,10 @@ PostDeleteEvent should have the ``field`` arguments.
         def post_changed(self):
             # logic
 
+Please note that if you want to track the change of the foreign key field (when
+the author is changed in the above example), use PreSaveEvent or PostSaveEvent.
+
+
 Models
 =================
 
