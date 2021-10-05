@@ -9,6 +9,20 @@ Signals for a cleaner design and extra functionalities.
 :Package: https://pypi.org/project/django-model-event-actions/
 :Source: https://github.com/aryabartar/django-model-event-actions
 
+
+Contents
+========
+
+.. toctree::
+   :maxdepth: 2
+
+   install
+   tutorial
+   contribution
+
+* :ref:`search`
+
+
 Overview
 ========
 
@@ -19,10 +33,3 @@ Overview
 To get a feel of how django-model-event-actions works, check out the
 :doc:`tutorial`.
 
-Contents
-========
-
-* :doc:`install`
-* :doc:`tutorial`
-* :ref:`modindex`
-* :ref:`search`
